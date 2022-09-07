@@ -1,3 +1,5 @@
+import org.w3c.dom.Element;
+
 public class Employee {
     public long id;
     public String firstName;
@@ -15,4 +17,8 @@ public class Employee {
         this.age = age;
     }
 
+    @Override
+    public String toString() {
+        return id + firstName + lastName + country + age;
+    }
 }
